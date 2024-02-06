@@ -1,4 +1,4 @@
-name: Build and Deploy MAUI App
+name: Build and Deploy MAUI App1
 
 on:
   push:
