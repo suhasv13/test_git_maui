@@ -16,10 +16,12 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '8.0.x'
-    - name: Install .NET MAUI workload
-      run: dotnet workload install maui
+        dotnet-version: '8.0.x'  # Use the desired version of .NET 8
 
+    - name: Install .NET MAUI workload
+      run: |
+        dotnet workload install maui
+        dotnet --info  # Print information about the installed SDK and workloads
 
     - name: Build and Publish MAUI App
       run: |
